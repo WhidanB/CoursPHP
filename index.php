@@ -5,9 +5,6 @@ $sql = "SELECT * FROM stagiaire";
 $query = $db->prepare($sql);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
-// echo "<pre>";
-// // print_r($result);
-// echo "</pre>";
 require_once('close.php');
 
 ?>
@@ -45,6 +42,7 @@ require_once('close.php');
                     <td><?= $stagiaire['last_name'] ?></td>
                     <td>
                         <a href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Voir</a>
+                        <a href="delete.php?id=<?= $stagiaire['id'] ?>">Supprimer</a>
                     </td>
                 </tr>
 

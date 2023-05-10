@@ -17,3 +17,16 @@ th {
   border: 1px black solid;
   padding: 10px;
 }
+
+td a {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+td:last-child {
+  padding: 10px;
+}
