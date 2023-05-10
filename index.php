@@ -43,6 +43,7 @@ require_once('close.php');
                     <td>
                         <a href="stagiaire.php?id=<?= $stagiaire['id'] ?>">Voir</a>
                         <a href="delete.php?id=<?= $stagiaire['id'] ?>">Supprimer</a>
+                        <a href="edit.php?id=<?= $stagiaire['id'] ?>">Modifier</a>
                     </td>
                 </tr>
 
