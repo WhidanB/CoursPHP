@@ -14,6 +14,8 @@ if ($_POST) {
         $query->bindValue(':first_name', $first_name, PDO::PARAM_STR_CHAR);
         $query->bindValue(':last_name', $last_name, PDO::PARAM_STR_CHAR);
         $query->execute();
+        require_once('close.php');
+        header("Location: index.php");
     }
 }
 
@@ -38,8 +40,8 @@ if ($_POST) {
             <input type="text" name="first_name" required>
             <label for="last_name">Last name</label>
             <input type="text" name="last_name" required>
-            <input type="submit" value="send">
         </div>
+        <input type="submit" value="send">
     </form>
 </body>
 

@@ -5,9 +5,10 @@ $sql = "SELECT * FROM stagiaire";
 $query = $db->prepare($sql);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
-echo "<pre>";
-// print_r($result);
-echo "</pre>";
+// echo "<pre>";
+// // print_r($result);
+// echo "</pre>";
+require_once('close.php');
 
 ?>
 

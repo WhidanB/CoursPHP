@@ -9,6 +9,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     $query->bindValue(':id', $id, PDO::PARAM_INT);
     $query->execute();
     $result = $query->fetch();
+    require_once('close.php');
 } else {
     header('Location: index.php');
 }
